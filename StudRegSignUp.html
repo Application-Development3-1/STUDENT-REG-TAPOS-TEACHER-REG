@@ -62,13 +62,13 @@
                     </div>
 
                     <div class="input-group">
-                        <input type="password" id="password" required>
-                        <label class="labellinePassWord">Password</label>
+                        <input type="password" id="createPassword" required>
+                        <label class="labellinePassWord">Create Password</label> <!--eto iniba ko din to -->
                     </div>
 
                     <div class="input-group">
-                        <input type="password" id="re-enterStudentPassword" required>
-                        <label class="labellineRePassWord">Re-Enter Password</label>
+                        <input type="password" id="re-enterStudentPassword" required> 
+                        <label class="labellineRePassWord">Re-Enter Password</label>  <!--etooo yung sa re enter password-->
                     </div>
                 </div>
 
@@ -78,7 +78,9 @@
                 <h1 class="note-red">*Fill in required Information</h1>
 
                 <!--sign up button-->
-                <button class="signupStud" id="btn_SignUp">Sign Up</button>
+                <input type ="button" class="signupStud" onclick="checkPassword()" required> 
+                    <label for="signupStud" id="btn_label"">Sign Up</label>
+                </input>
             </form>
         </div>
     </div>
