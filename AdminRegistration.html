@@ -1,0 +1,97 @@
+lali<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="AdminRegistration.css">
+    <link rel="stylesheet" href="GlobalCss.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <title>Sign Up</title>
+</head>
+<body>
+    <div class="bg-color"></div>
+
+    <img id="logo_pic" src="stilogo.png" alt="logo">
+
+    <div class="container">
+        <h1>Account Registration</h1>
+
+        <img id="logo_pic2" src="stilogo.png" alt="logo">
+
+        <div class="fillup">
+            <form action="#">
+                <div class="user-details">
+                    <div class="input-group">
+                        <input type="text number" required>
+                        <label class="labellineEmail">Email</label>
+                    </div>
+                    
+                    <select name="Course" id="Course" required>
+                        <option value="Default">Department</option>
+                        <option value="ITD" id="itdep">Information Technology Department</option>
+                        <option value="BMD" id="bmdep">Business Management Department</option>
+                        <option value="CED" id="comendep">Computer Engineering Department</option>
+                        <option value="MAD" id="mulartdep">Multimedia Arts Department</option>
+                        <option value="TD" id="tourdep">Tourism Department</option>
+                        <option value="ICTD" id="ictdep">ICT/CS Department</option>
+                        <option value="AD" id="accdep">Accountant Department</option>
+                        <option value="ARD" id="assregdep">Associated Registrar Department</option>
+                    </select>
+                
+                    <div class="input-group">
+                        <input type="text" required>
+                        <label class="labellineFname">First Name</label>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="text" required>
+                        <label class="labellineLname">Last Name</label>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="text" required>
+                        <label class="labellineMname">Middle Name</label>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="text" required>
+                        <label class="labellineContact">Contact No.</label>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="password" id ="createPassword" required> 
+                        <label class="labellinePassWord">Create Password</label> 
+                    </div>
+
+                    <div class="input-group">
+                      <input type="password" id="re-enterStudentPassword" required>
+                      <label class="labellineRePassWord">Re-Enter Password</label>
+                  </div> 
+
+                </div>
+
+                <p id = "admin_message"></p> 
+                
+                <!--Note for fill up-->
+                <h1 class="note-red">*Fill in required Information</h1>
+
+                <!--sign up button-->
+                <input type ="button" class="signupAd" onclick="checkPassword()" required> 
+                    <label for="signupAd" id="btn_label"">Sign Up</label>
+                </input>
+            </form>
+        </div>
+    </div>
+
+    <!--Back button-->
+    <div class="back-button">
+        <button id="Back">
+            <a href="adminregistration.html">
+                <i class="fa fa-solid fa-arrow-left"></i>
+            </a>
+        </button>
+    </div>
+
+    <script src="AdminRegistration.js"></script> 
+</body>
+</html>
