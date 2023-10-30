@@ -2,7 +2,7 @@ function checkPassword(){
 
   let password = document.getElementById("createPassword").value;
 
-  let reEnterPassword = document.getElementById("re-enterStudentPassword").value;
+  let reEnterPassword = document.getElementById("re-enterPassword").value;
 
   console.log(password, reEnterPassword);
   let admin_message = document.getElementById("admin_message");
