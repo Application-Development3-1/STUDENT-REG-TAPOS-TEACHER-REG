@@ -1,6 +1,6 @@
 function checkPassword(){
 
-  let password = document.getElementById("password").value;
+  let password = document.getElementById("createPassword").value;
 
   let reEnterPassword = document.getElementById("re-enterStudentPassword").value;
 
